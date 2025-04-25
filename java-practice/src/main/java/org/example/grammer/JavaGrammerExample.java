@@ -1,12 +1,13 @@
 package org.example.grammer;
 
+import java.math.BigDecimal;
+
 public class JavaGrammerExample {
 
-  public static void main(String[] args) {
-    String s = "B";
-    boolean result = resultMethod(s);
+  public record Person(Boolean isActive) {}
 
-    System.out.println(result);
+  public static void main(String[] args) {
+    String json = "{\"isActive\": true}"; // null이 들어가는 경우
 
   }
 
